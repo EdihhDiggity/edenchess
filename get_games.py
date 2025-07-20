@@ -106,8 +106,9 @@ def get_games_from_archives(username):
                 "date": date
             })
         
-        gamesJson = 0
-        gamesJson = json.dumps(games, ensure_ascii=False, separators=(",", ":"))
-        return Response(gamesJson, mimetype="application/json")
+        # gamesJson = 0
+        # gamesJson = json.dumps(games, ensure_ascii=False, separators=(",", ":"))
+        # return gamesJson#, mimetype="application/json"
+        return games
     else:
         return "X Failed to fetch archives."
