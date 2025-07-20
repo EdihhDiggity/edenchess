@@ -13,5 +13,9 @@ def importGame():
 
 @views.route("/analysis/<usrnm>")
 def analysis(usrnm):
-    # return f"{usrnm}"
-    return get_games_from_archives(usrnm)
+    return render_template("gameInsights.html", username = usrnm)
+
+@views.route("/api/analysis/<usrnm>")
+def api_analysis(usrnm):
+    game_data = get_games_from_archives(usrnm)
+    return jsonify(game_data)
