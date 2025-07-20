@@ -49,7 +49,7 @@ def detect_opening_from_moves(game_moves):
 def get_games_from_archives(username):
     games = []
     headers = {
-        "User-Agent": "Mozilla/5.0"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
     }
 
     archives_url = f"https://api.chess.com/pub/player/{username}/games/archives"
