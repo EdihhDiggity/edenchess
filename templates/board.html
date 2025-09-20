@@ -13,25 +13,38 @@
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
     <style>
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
         body {
             text-align: center;
             font-family: sans-serif;
         }
 
-        @media (min-width: 768px) {
-            #board {
-                width: 400px;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #board {
-                width: 100%;
-                margin: auto;
-            }
+        #board {
+            margin: 20px auto;
+            max-width: 100%;
         }
     </style>
+
+    {% if is_mobile %}
+    <style>
+        #board {
+            width: 100%;
+        }
+    </style>
+    {% else %}
+    <style>
+        #board {
+            width: 400px;
+        }
+    </style>
+    {% endif %}
+
 </head>
 
 <body>
@@ -145,6 +158,11 @@
         });
 
         loadPuzzle(current);
+
+
+
+
+
     </script>
 
 
