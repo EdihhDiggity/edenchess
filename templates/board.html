@@ -13,19 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
     <style>
-        #board {
-            width: 400px;
-            margin: auto;
-        }
-
         body {
             text-align: center;
             font-family: sans-serif;
         }
 
-        @media (max-width: 480px) {
+        @media (min-width: 768px) {
             #board {
-                max-width: 100%;
+                width: 400px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #board {
+                width: 100%;
+                margin: auto;
             }
         }
     </style>
