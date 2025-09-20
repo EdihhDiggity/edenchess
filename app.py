@@ -1,13 +1,8 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify
 import json, os, random
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    ua = request.headers.get("User-Agent", "").lower()
-    is_mobile = any(word in ua for word in ["iphone", "android", "mobile"])
-    return render_template("board.html", is_mobile=is_mobile)
 
 def load_puzzle_set(setname):
     """Load all puzzles from puzzles/<setname>/*.json"""
