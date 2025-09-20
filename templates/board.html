@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale:1.0">
     <title>Chess Puzzle Demo</title>
 
     <!-- Dependencies -->
@@ -13,38 +13,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
     <style>
-        button {
-            display: block;
-            margin: 10px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-
         body {
             text-align: center;
             font-family: sans-serif;
         }
 
         #board {
-            margin: 20px auto;
-            max-width: 100%;
-        }
-    </style>
-
-    {% if is_mobile %}
-    <style>
-        #board {
-            width: 100%;
-        }
-    </style>
-    {% else %}
-    <style>
-        #board {
             width: 400px;
+            margin: auto;
+        }
+
+        @media (max-width: 480px) {
+            #board {
+                width: 100%;
+                margin: auto;
+            }
         }
     </style>
-    {% endif %}
-
 </head>
 
 <body>
@@ -160,9 +145,9 @@
         loadPuzzle(current);
 
 
-
-
-
+        window.addEventListener("resize", function () {
+            board.resize();
+        });
     </script>
 
 
