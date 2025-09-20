@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chess Puzzle Demo</title>
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+    <style>
+        #board {
+            width: 400px;
+            margin: auto;
+        }
+
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Chess Puzzle Demo</h2>
+    <div id="board"></div>
+
+    <p id="status"></p>
+    <button onclick="nextPuzzle()">Next Puzzle</button>
+
+    <script>
+        var puzzles = {{ puzzles| tojson | safe }} || [];
+        var current = 0;
+        var game = new Chess();
+        var solutionIndex = 0;
+
+        function loadPuzzle(i) {
+            if (puzzles.length === 0) return;
+            var p = puzzles[i];
+            game.load(p.fen);
+            board.position(p.fen);
+            solutionIndex = 0;
+
+            // Flip board depending on whose turn it is
+            board.orientation(p.turn === "b" ? "black" : "white");
+
+            document.getElementById("status").innerText =
+                "Puzzle " + (i + 1) + " | " +
+                (p.turn === "w" ? "White" : "Black") + " to move";
+
+            // If puzzle starts with computer move
+            if (game.turn() !== p.turn) {
+                autoPlay();
+            }
+        }
+
+        function nextPuzzle() {
+            if (puzzles.length === 0) return;
+
+            var next;
+            do {
+                next = Math.floor(Math.random() * puzzles.length);
+            } while (next === current && puzzles.length > 1); // avoid same puzzle twice
+
+            current = next;
+            loadPuzzle(current);
+        }
+
+
+        function onDragStart(source, piece, position, orientation) {
+            if (game.game_over()) return false;
+
+            var turn = game.turn();
+            var p = puzzles[current];
+
+            // Prevent moving opponent’s pieces
+            if ((turn === 'w' && piece.search(/^b/) !== -1) ||
+                (turn === 'b' && piece.search(/^w/) !== -1)) {
+                return false;
+            }
+        }
+
+        function onDrop(source, target) {
+            var move = game.move({
+                from: source,
+                to: target,
+                promotion: "q"
+            });
+
+            if (move === null) return 'snapback';
+
+            var expectedMove = puzzles[current].solution[solutionIndex];
+            if (move.san === expectedMove) {
+                solutionIndex++;
+                if (solutionIndex >= puzzles[current].solution.length) {
+                    document.getElementById("status").innerText = "O Correct solution!";
+                } else {
+                    document.getElementById("status").innerText = "Good! Opponent to move...";
+                    setTimeout(autoPlay, 500); // computer reply
+                }
+            } else {
+                document.getElementById("status").innerText = "X Wrong move! Try again.";
+                game.undo();
+                return 'snapback';
+            }
+        }
+
+        function autoPlay() {
+            var p = puzzles[current];
+            if (solutionIndex >= p.solution.length) return;
+
+            var expectedMove = p.solution[solutionIndex];
+            var move = game.move(expectedMove);
+            if (move) {
+                board.position(game.fen());
+                solutionIndex++;
+                document.getElementById("status").innerText = "Your move...";
+            }
+        }
+
+        function onSnapEnd() {
+            board.position(game.fen());
+        }
+
+        var board = Chessboard('board', {
+            draggable: true,
+            position: 'start',
+            pieceTheme: "{{ url_for('static', filename='chessboard/img/chesspieces/wikipedia') }}/" + "{piece}.png",
+            onDragStart: onDragStart,
+            onDrop: onDrop,
+            onSnapEnd: onSnapEnd
+        });
+
+        loadPuzzle(current);
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chess Puzzle Test</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- chess.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+
+  <!-- chessboard.js CSS + JS -->
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 30px; }
+    #board { width: 400px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h2>Chessboard.js + Chess.js Test</h2>
+  <div id="board"></div>
+  <p id="status"></p>
+
+  <script>
+    var game = new Chess();
+
+    function onDrop(source, target) {
+      var move = game.move({ from: source, to: target, promotion: 'q' });
+      if (move === null) return 'snapback';
+      document.getElementById("status").innerText = "You played: " + move.san;
+    }
+
+    var piecePath = "{{ url_for('static', filename='chessboard/img/chesspieces/wikipedia') }}";
+
+    var board = Chessboard('board', {
+        
+      draggable: true,
+      position: 'start',
+      onDrop: onDrop,
+      pieceTheme: piecePath + '/{piece}.png'
+    });
+  </script>
+</body>
+</html>
