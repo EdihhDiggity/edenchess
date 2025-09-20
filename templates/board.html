@@ -16,11 +16,14 @@
         body {
             text-align: center;
             font-family: sans-serif;
+            background-color: black;
+            color: white;
         }
 
         #board {
             width: 400px;
             margin: auto;
+            border: 1px solid white;
         }
 
         @media (max-width: 480px) {
@@ -38,6 +41,10 @@
 
     <p id="status"></p>
     <button onclick="nextPuzzle()">Next Puzzle</button>
+    <br>
+
+    <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh" style="height: 180px">
+
 
     <script>
         var puzzles = {{ puzzles| tojson | safe }} || [];
