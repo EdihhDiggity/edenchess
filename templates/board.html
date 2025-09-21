@@ -3,16 +3,29 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale:1.0">
-    <title>Chess Puzzle Demo</title>
+    <title>Chess Opening Practice</title>
 
     <!-- Dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+
     <style>
+        .pixelify-sans-font {
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         body {
             text-align: center;
             font-family: sans-serif;
@@ -32,18 +45,41 @@
                 margin: auto;
             }
         }
+
+        .edihh {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 400px;
+            margin: auto;
+        }
+
+        .dialog {
+            margin: 20px;
+            text-align: left;
+            text-indent: 20px;
+            font-family: "Pixelify Sans", sans-serif;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <h2>Chess Puzzle Demo</h2>
+    <h3>Chess Opening Practice</h3>
     <div id="board"></div>
 
     <p id="status"></p>
     <button onclick="nextPuzzle()">Next Puzzle</button>
     <br>
 
-    <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh" style="height: 180px">
+    <div class="edihh">
+        <div class="pic">
+            <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh" style="object-fit: cover; width: 100%;">
+        </div>
+        <div class="dialog" id="dialog">
+            . . .
+        </div>
+    </div>
 
 
     <script>
@@ -63,8 +99,13 @@
             board.orientation(p.turn === "b" ? "black" : "white");
 
             document.getElementById("status").innerText =
-                "Puzzle " + (i + 1) + " | " +
+                "Line " + (i + 1) + " | " +
                 (p.turn === "w" ? "White" : "Black") + " to move";
+
+            //dialog
+            if (p.dialog) {
+                document.getElementById("dialog").innerText = p.dialog;
+            } else document.getElementById("dialog").innerText = ". . .";
 
             // If puzzle starts with computer move
             if (game.turn() !== p.turn) {
@@ -111,13 +152,13 @@
             if (move.san === expectedMove) {
                 solutionIndex++;
                 if (solutionIndex >= puzzles[current].solution.length) {
-                    document.getElementById("status").innerText = "O Correct solution!";
+                    document.getElementById("status").innerText = "Correct solution!";
                 } else {
                     document.getElementById("status").innerText = "Good! Opponent to move...";
                     setTimeout(autoPlay, 500); // computer reply
                 }
             } else {
-                document.getElementById("status").innerText = "X Wrong move! Try again.";
+                document.getElementById("status").innerText = "Wrong move! Try again.";
                 game.undo();
                 return 'snapback';
             }
