@@ -1,0 +1,62 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "d4",
+            "exd4",
+            "Nxd4",
+            "Nf6",
+            "Nxc6",
+            "bxc6",
+            "Bd3",
+            "d5",
+            "Nc3"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            4,
+            6,
+            8,
+            10,
+            12
+        ],
+        "dialog": [
+            "We're going to play the Schmidt Variation (Mieses Variation)",
+            "Knight takes knight... (simplification)",
+            "Black has to take with the b pawn otherwise Qxd8+... White can improve f1 bishop.",
+            "The bishop on e3 guards the e pawn... Black typically wants to get rid of the doubled c pawns. Hence, they ofter play d5.",
+            "White usually goes for Nc3 and h3 followed by castle... Black wants to pressure the semi-open files. Be aware of pawn structure."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "d4",
+            "exd4",
+            "Nxd4",
+            "Nf6",
+            "Nc3",
+            "Bb4",
+            "Nxc6"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            4,
+            6,
+            8
+        ],
+        "dialog": [
+            "We're going to play the Schmidt Variation (Mieses Variation)",
+            "Knight defends pawn...",
+            "Black typically pins the c3 knight with Bb4... Black rarely wants to lose a dark square bishop for a knight."
+        ]
+    }
+]
