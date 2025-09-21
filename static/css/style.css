@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Ari-W9500';
+    src: url('../fonts/ari_w9500/ari-w9500.ttf');
+    /* font-weight: normal;
+        font-style: normal; */
+}
+
+.dialog {
+    font-family: 'Ari-W9500';
+}
