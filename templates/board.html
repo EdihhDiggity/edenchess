@@ -14,6 +14,10 @@
 
 
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -52,10 +56,10 @@
         }
 
         .dialog {
-            margin: 20px;
+            margin: 20px 20px 20px 0px;
             text-align: left;
             text-indent: 20px;
-            font-family: "Pixelify Sans", sans-serif;
+            /* font-family: "Pixelify Sans", sans-serif; */
             color: white;
         }
 
@@ -108,12 +112,18 @@
         </div>
     </div>
 
+    <audio id="moveSound" src="{{ url_for('static', filename='sounds/Move.mp3') }}"></audio>
+    <audio id="captureSound" src="{{ url_for('static', filename='sounds/Capture.mp3') }}"></audio>
+    <audio id="errorSound" src="{{ url_for('static', filename='sounds/Error.mp3') }}"></audio>
+
+
 
     <script>
         var puzzles = {{ puzzles| tojson | safe }} || [];
         var current = 0;
         var game = new Chess();
         var solutionIndex = 0;
+        var atMove = 0;
 
         function loadPuzzle(i) {
             if (puzzles.length === 0) return;
@@ -121,6 +131,7 @@
             game.load(p.fen);
             board.position(p.fen);
             solutionIndex = 0;
+            atMove = 0;
 
             // Flip board depending on whose turn it is
             board.orientation(p.turn === "b" ? "black" : "white");
@@ -130,9 +141,7 @@
                 (p.turn === "w" ? "White" : "Black") + " to move";
 
             //dialog
-            if (p.dialog) {
-                document.getElementById("dialog").innerText = p.dialog;
-            } else document.getElementById("dialog").innerText = ". . .";
+            document.getElementById("dialog").innerText = ". . .";
 
             // If puzzle starts with computer move
             if (game.turn() !== p.turn) {
@@ -166,7 +175,12 @@
             }
         }
 
+
+
         function onDrop(source, target) {
+            var p = puzzles[current];
+
+
             var move = game.move({
                 from: source,
                 to: target,
@@ -176,16 +190,36 @@
             if (move === null) return 'snapback';
 
             var expectedMove = puzzles[current].solution[solutionIndex];
+
+
+
             if (move.san === expectedMove) {
+
+                if (p.dialog && p.dialogAtMove[atMove] == solutionIndex) {
+                    document.getElementById("dialog").innerText = p.dialog[atMove];
+                    atMove++;
+                } else document.getElementById("dialog").innerText = ". . .";
+
                 solutionIndex++;
                 if (solutionIndex >= puzzles[current].solution.length) {
-                    document.getElementById("status").innerText = "Correct solution!";
+                    document.getElementById("status").innerText = "Well done!";
                 } else {
                     document.getElementById("status").innerText = "Good! Opponent to move...";
                     setTimeout(autoPlay, 500); // computer reply
                 }
+
+
+                // play sound
+                if (move.captured) {
+                    document.getElementById("captureSound").play();
+                } else {
+                    document.getElementById("moveSound").play();
+                }
+
+
             } else {
                 document.getElementById("status").innerText = "Wrong move! Try again.";
+                document.getElementById("errorSound").play();
                 game.undo();
                 return 'snapback';
             }
@@ -201,6 +235,14 @@
                 board.position(game.fen());
                 solutionIndex++;
                 document.getElementById("status").innerText = "Your move...";
+
+            }
+
+            // play sound
+            if (move.captured) {
+                document.getElementById("captureSound").play();
+            } else {
+                document.getElementById("moveSound").play();
             }
         }
 
