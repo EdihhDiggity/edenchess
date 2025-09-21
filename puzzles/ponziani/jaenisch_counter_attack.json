@@ -1,0 +1,466 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "Ng6",
+            "Nxg6"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "d6 is a blunder..."
+        ]
+    },
+     {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "Bd7",
+            "Bxd7+",
+            "Qxd7",
+            "Nxd7"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10,
+            16
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "d6 is a blunder...",
+            "White wins a lot of material here."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "dxe5",
+            "cxb7+",
+            "Bd7",
+            "Qxd7+",
+            "Qxd7",
+            "bxa8=Q+"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "d6 is a blunder..."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "Qb6",
+            "cxb7+",
+            "Qxb5",
+            "bxa8=Q"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "d6 is a blunder..."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "Qb6",
+            "cxb7+",
+            "Kd8",
+            "Nxf7+"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "d6 is a blunder..."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "f6",
+            "Nf3"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            10
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "Simply move away from the danger."
+        ]
+    },
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Bxf2+",
+            "Ke2"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "f6",
+            "Bh5+"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "Be7",
+            "Nxf7",
+            "Bxg5",
+            "Nd6+",
+            "cxd6",
+            "Bh5+",
+            "Rf7",
+            "Qxf7#"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "Rxf7",
+            "Bh5"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black."
+        ]
+    },
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Nxf2",
+            "Qd5"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            8
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "In the Jaenisch, Vuković Gambit, Black sacrifices a knight early to rip open the center and attack White's king before they can castle."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Bxf2",
+            "Ke2",
+            "bxc6",
+            "Qa4",
+            "Nc5",
+            "Qg4"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            8,
+            12,
+            16
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "In the Jaenisch, Vuković Gambit, Black sacrifices a knight early to rip open the center and attack White's king before they can castle.",
+            "How do we remove the defender of the knight that's guarding the bishop?",
+            "Qg4 targets the g7 pawn while white's king on e2 attacks black's bishop."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Bxf2",
+            "Ke2",
+            "bxc6",
+            "Qa4",
+            "f5",
+            "Nbd2"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            6,
+            8,
+            12,
+            14
+        ],
+        "dialog": [
+            "The Jaenisch counter-attack is when the black knight develops on the f6 square... It's the second best response for black.",
+            "In the Jaenisch, Vuković Gambit, Black sacrifices a knight early to rip open the center and attack White's king before they can castle.",
+            "How do we remove the defender of the knight that's guarding the bishop?",
+            "Simply add another attacker to the knight."
+        ]
+    }
+]

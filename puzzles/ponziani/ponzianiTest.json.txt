@@ -1,0 +1,842 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3"
+        ],
+        "turn": "w",
+        "comment": "starting position"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4"
+        ],
+        "turn": "w",
+        "comment": "Against d5",
+        "dialog": "You have to more prepared than your apponent."
+    },
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "Bd7",
+            "exd5"
+        ],
+        "turn": "w",
+        "comment": "Against d5 and Bd7"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "Bd7",
+            "exd5",
+            "Nd4",
+            "Qd1",
+            "Nxf3+",
+            "Qxf3"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "Bd7",
+            "exd5",
+            "Nd4",
+            "Qd1",
+            "Nxf3+",
+            "Qxf3",
+            "Nf6",
+            "Bc4",
+            "e4",
+            "Qe2"
+        ],
+        "turn": "w"
+    },
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "dxe4",
+            "Nxe5"
+        ],
+        "turn": "w",
+        "comment": "Against d5 and dxe4"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "dxe4",
+            "Nxe5",
+            "Qd5",
+            "Nxc6",
+            "Qxc6",
+            "Bb5"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "dxe4",
+            "Nxe5",
+            "Qd5",
+            "Nxc6",
+            "bxc6",
+            "Bc4",
+            "Qd6",
+            "d3",
+            "exd3",
+            "O-O"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d5",
+            "Qa4",
+            "dxe4",
+            "Nxe5",
+            "Qd5",
+            "Nxc6",
+            "bxc6",
+            "Bc4",
+            "Qd6",
+            "d3",
+            "exd3",
+            "O-O",
+            "Nf6",
+            "Bf4",
+            "Qxf4",
+            "Bxf7+",
+            "Kxf7",
+            "Qxf4"
+        ],
+        "turn": "w"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4"
+        ],
+        "turn": "w",
+        "comment": "Against Nf6"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "Ng6",
+            "Nxg6"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+"
+        ],
+        "turn": "w"
+    },
+     {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "Bd7",
+            "Bxd7+",
+            "Qxd7",
+            "Nxd7"
+        ],
+        "turn": "w",
+        "comment": "winning"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "dxe5",
+            "cxb7+",
+            "Bd7",
+            "Qxd7+",
+            "Qxd7",
+            "bxa8=Q+"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "Qb6",
+            "cxb7+",
+            "Qxb5",
+            "bxa8=Q"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+",
+            "c6",
+            "dxc6",
+            "Qb6",
+            "cxb7+",
+            "Kd8",
+            "Nxf7+"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "f6",
+            "Nf3"
+        ],
+        "turn": "w"
+    },
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Bxf2+",
+            "Ke2"
+        ],
+        "turn": "w",
+        "comment": "boring"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "f6",
+            "Bh5+"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "Be7",
+            "Nxf7",
+            "Bxg5",
+            "Nd6+",
+            "cxd6",
+            "Bh5+",
+            "Rf7",
+            "Qxf7#"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Nb8",
+            "Nxe5",
+            "Bc5",
+            "Qg4",
+            "Nxf2",
+            "Qxg7",
+            "Rf8",
+            "Be2",
+            "Nxh1",
+            "Bg5",
+            "Rxf7",
+            "Bh5"
+        ],
+        "turn": "w"
+    },
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Nxf2",
+            "Qd5"
+        ],
+        "turn": "w",
+        "comment": "boring II",
+        "dialog": "In the Vukovic Gambit, Black sacrifices a knight early to rip open the center and attack White's king before they can castle."
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Bxf2",
+            "Ke2",
+            "bxc6",
+            "Qa4",
+            "Nc5",
+            "Qg4"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Nf6",
+            "d4",
+            "Nxe4",
+            "d5",
+            "Bc5",
+            "dxc6",
+            "Bxf2",
+            "Ke2",
+            "bxc6",
+            "Qa4",
+            "f5",
+            "Nbd2"
+        ],
+        "turn": "w"
+    },
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "f5",
+            "exf5",
+            "e4",
+            "Nd4",
+            "Nxd4",
+            "Qh5+",
+            "Ke7",
+            "cxd4"
+        ],
+        "turn": "w",
+        "comment": "Ponziani counter gambit",
+        "variation": "ponziani countergambit",
+        "dialog": "In the Ponziani Countergambit, after f5, Black's idea is to challenge White's center immediately and gain quick piece activity."
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "f5",
+            "exf5",
+            "e4",
+            "Nd4",
+            "Nxd4",
+            "Qh5+",
+            "g6",
+            "fxg6"
+        ],
+        "turn": "w",
+        "variation": "ponziani countergambit",
+        "dialog": "Ponziani Countergambit... By pushing f5, Black sacrifices some pawn safety for open lines, and attacking chances."
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "f5",
+            "exf5",
+            "e4",
+            "Nd4",
+            "Nxd4",
+            "Qh5+",
+            "g6",
+            "fxg6",
+            "Nc2+",
+            "Kd1",
+            "Nxa1",
+            "g7+",
+            "Ke7",
+            "Qe5+"
+        ],
+        "turn": "w",
+        "variation": "ponziani countergambit",
+        "dialog": "If played incorrectly, the Ponziani Countergambit can lead to an easy win with forced checkmate.."
+    },
+
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d6",
+            "Nf6",
+            "Bb5"
+        ],
+        "turn": "w",
+        "comment": "Dealing with d6"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d6",
+            "d4",
+            "Nf6",
+            "Bb5",
+            "Nxe4",
+            "d5",
+            "a6",
+            "Ba4",
+            "b5",
+            "Bc2",
+            "Nxf2",
+            "Kxf2"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d6",
+            "d4",
+            "Nf6",
+            "Bb5",
+            "exd4",
+            "cxd4",
+            "Nxe4",
+            "d5",
+            "a6",
+            "Ba4",
+            "b5",
+            "Bc2",
+            "Qe7",
+            "O-O"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "d6",
+            "d4",
+            "Nf6",
+            "h3",
+            "Nxe4",
+            "d5",
+            "Ne7",
+            "Qa4+"
+        ],
+        "turn": "w",
+        "dialog": "Forks are common in the Ponziani."
+    },
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "Bc6",
+            "d5",
+            "Ne7",
+            "Nxe5"
+        ],
+        "turn": "w",
+        "comment": "Dealing with Bc5",
+        "dialog": "Bishop c5... One of the most played moves turns out to be a bad one."
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "Bc6",
+            "d5",
+            "Ne7",
+            "Nxe5",
+            "d6",
+            "Bb5+"
+        ],
+        "turn": "w"
+    },
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "exd4",
+            "cxd4",
+            "Bb4+",
+            "Nc3"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "exd4",
+            "cxd4",
+            "Bb4+",
+            "Nc3",
+            "Nf6",
+            "d5",
+            "Ne7",
+            "Bd3"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "exd4",
+            "cxd4",
+            "Bb6",
+            "Nc3",
+            "Nf6",
+            "e5"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "exd4",
+            "cxd4",
+            "Bb6",
+            "Nc3",
+            "Nf6",
+            "d5",
+            "Ne7",
+            "Bd3",
+            "d6",
+            "Qa4+"
+        ],
+        "turn": "w"
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "c3",
+            "Bc5",
+            "d4",
+            "exd4",
+            "cxd4",
+            "Bb6",
+            "Nc3",
+            "Nf6",
+            "e5",
+            "Ng4",
+            "h3",
+            "Nh6",
+            "Bxh6"
+        ],
+        "turn": "w"
+    }
+]
