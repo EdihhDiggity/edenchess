@@ -8,14 +8,15 @@
     <!-- Dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
 
     <style>
@@ -37,14 +38,10 @@
             width: 400px;
             margin: auto;
             border: 1px solid white;
+            overflow: hidden;
         }
 
-        @media (max-width: 480px) {
-            #board {
-                width: 100%;
-                margin: auto;
-            }
-        }
+
 
         .edihh {
             display: grid;
@@ -61,6 +58,35 @@
             font-family: "Pixelify Sans", sans-serif;
             color: white;
         }
+
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+
+            50% {
+                transform: translatey(-10px);
+            }
+
+            100% {
+                transform: translatey(0px);
+            }
+        }
+
+        .pic {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @media (max-width: 480px) {
+            #board {
+                width: 100%;
+                margin: auto;
+            }
+
+            .edihh {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -74,7 +100,8 @@
 
     <div class="edihh">
         <div class="pic">
-            <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh" style="object-fit: cover; width: 100%;">
+            <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh"
+                style="object-fit: cover; width: 100%;">
         </div>
         <div class="dialog" id="dialog">
             . . .
