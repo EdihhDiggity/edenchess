@@ -62,6 +62,13 @@
             /* font-family: "Pixelify Sans", sans-serif; */
             color: white;
         }
+        .boardFooter {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 100%;
+            border: 1px solid white;
+        }
 
         @keyframes float {
             0% {
@@ -81,6 +88,11 @@
             animation: float 4s ease-in-out infinite;
         }
 
+        #status {
+            margin: 0;
+            padding: 16px 0;
+        }
+
         @media (max-width: 480px) {
             #board {
                 width: 100%;
@@ -91,24 +103,60 @@
                 width: 100%;
             }
         }
+
+        @media (min-width: 481px) {
+            #board {
+                width: 600px;
+                margin: auto;
+            }
+            .bigDiv {
+                display: flex;
+                margin: auto;
+            }
+
+            .bord {
+                margin: 0 0 0 auto;
+            }
+
+            .edihh {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                height: 100%;
+                margin-left: 24px;
+                /* margin: auto; */
+            }
+
+            .dialog {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <h3>Chess Opening Practice</h3>
-    <div id="board"></div>
-
-    <p id="status"></p>
-    <button onclick="nextPuzzle()">Next Puzzle</button>
-    <br>
-
-    <div class="edihh">
-        <div class="pic">
-            <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh"
-                style="object-fit: cover; width: 100%;">
+    <div class="bigDiv">
+        <div class="bord">
+            <div id="board"></div>
+            
+            <div class="boardFooter">
+                <p id="status"></p>
+                <button onclick="nextPuzzle()" class="boardButton">Next Puzzle</button>
+            </div>
+            
+            <br>
+            
         </div>
-        <div class="dialog" id="dialog">
-            . . .
+    
+        <div class="edihh">
+            <div class="pic">
+                <img src="{{ url_for('static', filename='edihh/img/edihh.png') }}" alt="Edihh"
+                    style="object-fit: cover; width: 100%;">
+            </div>
+            <div class="dialog" id="dialog">
+                . . .
+            </div>
         </div>
     </div>
 
@@ -119,6 +167,10 @@
 
 
     <script>
+        document.getElementById("moveSound").volume = 0.5;
+        document.getElementById("captureSound").volume = 0.5;
+        document.getElementById("errorSound").volume = 0.5;
+
         var puzzles = {{ puzzles| tojson | safe }} || [];
         var current = 0;
         var game = new Chess();
@@ -139,6 +191,7 @@
             document.getElementById("status").innerText =
                 "Line " + (i + 1) + " | " +
                 (p.turn === "w" ? "White" : "Black") + " to move";
+            document.getElementById("status").style = `background-color: black; color: white;`;
 
             //dialog
             document.getElementById("dialog").innerText = ". . .";
@@ -203,8 +256,9 @@
                 solutionIndex++;
                 if (solutionIndex >= puzzles[current].solution.length) {
                     document.getElementById("status").innerText = "Well done!";
+                    document.getElementById("status").style = `background-color: lime; color: black;`;
                 } else {
-                    document.getElementById("status").innerText = "Good! Opponent to move...";
+                    document.getElementById("status").innerText = "Good!";
                     setTimeout(autoPlay, 500); // computer reply
                 }
 
@@ -218,7 +272,7 @@
 
 
             } else {
-                document.getElementById("status").innerText = "Wrong move! Try again.";
+                document.getElementById("status").innerText = "Try again...";
                 document.getElementById("errorSound").play();
                 game.undo();
                 return 'snapback';

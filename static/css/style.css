@@ -1,10 +1,29 @@
 @font-face {
     font-family: 'Ari-W9500';
     src: url('../fonts/ari_w9500/ari-w9500.ttf');
-    /* font-weight: normal;
-        font-style: normal; */
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ari-W9500';
+    src: url('../fonts/ari_w9500/ari-w9500-bold.ttf');
+    font-weight: bold;
 }
 
 .dialog {
     font-family: 'Ari-W9500';
+}
+
+.boardFooter {
+    font-family: 'Ari-W9500';
+}
+
+.boardButton {
+    font-family: 'Ari-W9500';
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid white;
+}
+.boardButton:hover {
+    background-color: rgb(128, 128, 128);
+    border: 1px solid rgb(128, 128, 128);
 }
