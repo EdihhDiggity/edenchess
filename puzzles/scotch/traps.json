@@ -58,5 +58,48 @@
             "We're going to play the Classical Variation",
             "The knight is trapped."
         ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "e5",
+            "Nf3",
+            "Nc6",
+            "d4",
+            "exd4",
+            "Nxd4",
+            "Bc5",
+            "Be3",
+            "d6",
+            "Nxc6",
+            "bxc6",
+            "Bxc5",
+            "dxc5",
+            "Qxd8+"
+        ],
+        "turn": "w",
+        "dialogAtMove": [
+            4,
+            6,
+            8,
+            14
+        ],
+        "dialog": [
+            "We're going to play the Classical Variation",
+            "Bishop defends",
+            "d6 is a blunder for black. We are able to triple black's pawn with this.",
+            "Black now has triple pawns and no longer has castling rights."
+        ]
     }
 ]
