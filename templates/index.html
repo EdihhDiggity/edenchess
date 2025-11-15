@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Chess Puzzle Test</title>
+    <meta charset="utf-8">
+    <title>Eden Chess</title>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 
-  <!-- chess.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
 
-  <!-- chessboard.js CSS + JS -->
-  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
-  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+        a {
+            color: lime;
+            text-decoration: none;
+        }
 
-  <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 30px; }
-    #board { width: 400px; margin: auto; }
-  </style>
+        a:hover {
+            color: green;
+        }
+
+        #board {
+            width: 400px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .box {
+            /* background-color: yellow; */
+            border: 1px solid white;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <h2>Chessboard.js + Chess.js Test</h2>
-  <div id="board"></div>
-  <p id="status"></p>
+    <h1>Eden Chess</h1>
+    <div class="grid" id="openings-container">
+    </div>
 
-  <script>
-    var game = new Chess();
+    <script>
+        fetch('/static/openings_data/openings.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('openings-container');
 
-    function onDrop(source, target) {
-      var move = game.move({ from: source, to: target, promotion: 'q' });
-      if (move === null) return 'snapback';
-      document.getElementById("status").innerText = "You played: " + move.san;
-    }
+                data.forEach(opening => {
+                    const box = document.createElement('div');
+                    box.className = `box ${opening.cssClass}`;
 
-    var piecePath = "{{ url_for('static', filename='chessboard/img/chesspieces/wikipedia') }}";
+                    box.innerHTML = `
+                        <h3>${opening.title}</h3>
+                        <div class="practice-link">
+                        <a href="${opening.practiceLink}">Practice</a>
+                        </div>
+                        <hr>
+                        <div class="references" style="text-align:left;">
+                        <strong>References:</strong>
+                        <ul>
+                            ${opening.references.map(r => `<li><a href="${r}">${r}</a></li>`).join('')}
+                        </ul>
+                        </div>
+                    `;
 
-    var board = Chessboard('board', {
-        
-      draggable: true,
-      position: 'start',
-      onDrop: onDrop,
-      pieceTheme: piecePath + '/{piece}.png'
-    });
-  </script>
+                    container.appendChild(box);
+                });
+            })
+            .catch(err => console.error(err));
+    </script>
+
 </body>
+
 </html>

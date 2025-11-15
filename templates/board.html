@@ -185,7 +185,7 @@
             solutionIndex = 0;
             atMove = 0;
 
-            // Flip board depending on whose turn it is
+            //flip board depending on whose turn it is
             board.orientation(p.turn === "b" ? "black" : "white");
 
             document.getElementById("status").innerText =
@@ -196,7 +196,7 @@
             //dialog
             document.getElementById("dialog").innerText = ". . .";
 
-            // If puzzle starts with computer move
+            //if puzzle starts with computer move
             if (game.turn() !== p.turn) {
                 autoPlay();
             }
@@ -221,7 +221,7 @@
             var turn = game.turn();
             var p = puzzles[current];
 
-            // Prevent moving opponent’s pieces
+            //Prevent moving opponent’s pieces
             if ((turn === 'w' && piece.search(/^b/) !== -1) ||
                 (turn === 'b' && piece.search(/^w/) !== -1)) {
                 return false;
@@ -259,11 +259,11 @@
                     document.getElementById("status").style = `background-color: lime; color: black;`;
                 } else {
                     document.getElementById("status").innerText = "Good!";
-                    setTimeout(autoPlay, 500); // computer reply
+                    setTimeout(autoPlay, 500); //computer reply
                 }
 
 
-                // play sound
+                //playsound
                 if (move.captured) {
                     document.getElementById("captureSound").play();
                 } else {
@@ -292,7 +292,7 @@
 
             }
 
-            // play sound
+            //playsound
             if (move.captured) {
                 document.getElementById("captureSound").play();
             } else {

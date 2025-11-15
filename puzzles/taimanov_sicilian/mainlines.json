@@ -1,0 +1,83 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7
+        ],
+        "dialog": [
+            "This is the starting position of the Taimanov Sicilian."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6",
+            "Nc3",
+            "Qc7"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7
+        ],
+        "dialog": [
+            "Nc3 is the most popular way for White to play. Develops the second knight which defends the e pawn... We can develop our queen."
+        ]
+    },
+
+
+
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6",
+            "Nc3",
+            "Qc7",
+            "Be2",
+            "a6",
+            "O-O",
+            "Nf6",
+            "Be3",
+            "Bb4"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7,
+            9,
+            11,
+            13,
+            15
+        ],
+        "dialog": [
+            "Nc3 is the most popular way for White to play. Develops the second knight which defends the e pawn... We can develop our queen.",
+            "Control the b5 square to prevent white's knights from attacking our queen.",
+            "Develop the other knight.",
+            "We can then develop our dark square bishop.",
+            "We are trying to pressure White's center by capturing on c3 and threatening the e pawn..."
+        ]
+    }
+]

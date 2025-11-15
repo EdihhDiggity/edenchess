@@ -1,0 +1,78 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6",
+            "Nc3",
+            "Qc7",
+            "Be3",
+            "a6",
+            "Qd2",
+            "Nf6",
+            "O-O-O",
+            "Bb4",
+            "f3",
+            "b5"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7,
+            9,
+            11,
+            13,
+            15
+        ],
+        "dialog": [
+            "Nc3 is the most popular way for White to play. Develops the second knight which defends the e pawn... We can develop our queen.",
+            "White goes for the English attack. This is the more active way to play for White. White's plan is to castle queenside and launch a pawn storm at Black's kingside. We must defend the b5 square",
+            "We can develop our other knight.",
+            "Now, our bishop.",
+            "We can expand the queenside by using out b pawn."
+        ]
+    },
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6",
+            "Nc3",
+            "Qc7",
+            "Be3",
+            "a6",
+            "Qd2",
+            "Nf6",
+            "O-O-O",
+            "Bb4",
+            "f3",
+            "Ne7"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7,
+            9,
+            11,
+            13,
+            15
+        ],
+        "dialog": [
+            "Nc3 is the most popular way for White to play. Develops the second knight which defends the e pawn... We can develop our queen.",
+            "White goes for the English attack. This is the more active way to play for White. White's plan is to castle queenside and launch a pawn storm at Black's kingside. We must defend the b5 square",
+            "We can develop our other knight.",
+            "Now, our bishop.",
+            "The best move here would be to retreat one of our knight, rerouting it.."
+        ]
+    }
+]
