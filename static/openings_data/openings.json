@@ -1,0 +1,21 @@
+[
+    {
+        "cssClass": "scotch",
+        "title": "Scotch Opening",
+        "practiceLink": "./scotch",
+        "references": [
+            "https://chessdoctrine.com/chess-openings/kings-pawn/scotch-game/",
+            "https://lichess.org/study/ogcSXNKv/3dIR6WdI"
+        ]
+    },
+    {
+        "cssClass": "sicilian_taimanov",
+        "title": "Taimanov Sicilian",
+        "practiceLink": "./taimanov_sicilian",
+        "references": [
+            "https://chessdoctrine.com/chess-openings/kings-pawn/taimanov-sicilian/",
+            "https://www.chessable.com/blog/taimanov-sicilian/",
+            "https://chesspathways.com/chess-openings/taimanov-sicilian/"
+        ]
+    }
+]
