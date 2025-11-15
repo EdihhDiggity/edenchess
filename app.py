@@ -4,6 +4,10 @@ import json, os, random
 app = Flask(__name__)
 
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 def load_puzzle_set(setname):
     """Load all puzzles from puzzles/<setname>/*.json"""
     basepath = os.path.join("puzzles", setname)
@@ -18,7 +22,7 @@ def load_puzzle_set(setname):
                     puzzles = json.load(f)
                     all_puzzles.extend(puzzles)
                 except json.JSONDecodeError:
-                    print(f"⚠️ Invalid JSON in {fname}, skipping")
+                    print(f"[Warning]: Invalid JSON in {fname}, skipping")
 
     return all_puzzles
 
