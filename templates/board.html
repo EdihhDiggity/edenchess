@@ -208,7 +208,7 @@
             var next;
             do {
                 next = Math.floor(Math.random() * puzzles.length);
-            } while (next === current && puzzles.length > 1); // avoid same puzzle twice
+            } while (next === current && puzzles.length > 2); // avoid same puzzle twice
 
             current = next;
             loadPuzzle(current);

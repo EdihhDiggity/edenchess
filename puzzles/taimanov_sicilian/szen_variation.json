@@ -1,0 +1,42 @@
+[
+    {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "solution": [
+            "e4",
+            "c5",
+            "Nf3",
+            "e6",
+            "d4",
+            "cxd4",
+            "Nxd4",
+            "Nc6",
+            "Nb5",
+            "d6",
+            "c4",
+            "Nf6",
+            "N1c3",
+            "a6",
+            "Na3",
+            "Be7",
+            "Be2",
+            "O-O",
+            "O-O",
+            "b6"
+        ],
+        "turn": "b",
+        "dialogAtMove": [
+            7,
+            9,
+            11,
+            13,
+            17
+        ],
+        "dialog": [
+            "This is the Szen variation, AKA the anti-Taimanov... Black must play d6 to avoid Nd6+.",
+            "We can now develop our other knight.",
+            "Try to get rid of whites knight from our side of the board.",
+            "Develop the bishop and prepare to castle...",
+            "Best move for black here is b6..."
+        ]
+    }
+]
